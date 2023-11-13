@@ -36,7 +36,7 @@ def run():
 
     st.write("# Welcome to Toastmasters Member Interest Survey (MIS)!")
     ti_dashboard = pd.read_csv('https://dashboards.toastmasters.org/export.aspx?type=CSV&report=districtperformance~51~9/30/2023~~2023-2024')
-
+    
     st.sidebar.success("MIS Survey form")
 
 
