@@ -22,4 +22,6 @@ def reset_pass():
     worksheet="Sheet2",
     data=df,)
 
-st.button("Reset Password",on_click=reset_pass)
+password = st.text_input("Enter master password", type="password")
+if(password == "password"):
+    st.button("Reset Password",on_click=reset_pass)
