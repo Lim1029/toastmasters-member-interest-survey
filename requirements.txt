@@ -3,5 +3,5 @@ numpy
 pandas
 pydeck
 streamlit
-streamlit_star_rating
+st-star-rating
 st-gsheets-connection
