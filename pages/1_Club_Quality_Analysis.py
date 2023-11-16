@@ -29,12 +29,13 @@ from streamlit_gsheets import GSheetsConnection
 st.set_page_config(page_title="Club Quality Analysis", page_icon="📹")
 st.markdown("# Club Quality Analysis")
 st.sidebar.header("Club Quality Analysis")
-st.markdown("### Select a club to view the Club Quality Analysis")
+# st.markdown("### Select a club to view the Club Quality Analysis")
+st.write("Feature coming soon.")
 
-conn = st.connection("gsheets", type=GSheetsConnection)
-df = conn.read()
-selection = st.selectbox("Select a club", df[2].unique())
-chosen = df.iloc[:, 26:41][(df[2] == selection)]
+# conn = st.connection("gsheets", type=GSheetsConnection)
+# df = conn.read()
+# selection = st.selectbox("Select a club", df[2].unique())
+# chosen = df.iloc[:, 26:41][(df[2] == selection)]
 
-st.markdown("### Club Quality Analysis")
-st.dataframe(chosen)
+# st.markdown("### Club Quality Analysis")
+# st.dataframe(chosen)
