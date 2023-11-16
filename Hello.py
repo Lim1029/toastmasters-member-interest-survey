@@ -42,6 +42,8 @@ def run():
 
     st.title("MIS Survey form")
     st.write("This form is adapted from the Toastmasters International Member Interest Survey (MIS) to help you identify your interests and goals. The survey results will be used to help you find opportunities to develop your skills and achieve your goals. The survey results will also be used to help your club and district leaders identify ways to improve your club experience.")   
+    
+    st.write("Developed by Ming Kang, Area W1 Director 2023/2024. Please contact me at mk1029@hotmail.com for any questions or suggestions.")
     # st.dataframe(df)
 
     results = {}
