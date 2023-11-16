@@ -233,6 +233,12 @@ def run():
         st.write('Club and member achievements publicized')
         results[42] = st_star_rating("", maxValue=5, defaultValue=1, key="publicized",size=25)                                                                                
         
+        st.markdown('### Other interests')
+        results[43] = st.text_input('What do you like most about your club?')
+        results[44] = st.text_input('What do you like least about your club?')
+        results[45] = st.text_input('What recommendations for improvement can you provide?')
+        results[46] = st.text_input('Is there anything more specific you would like to learn about?')
+        
         submit = st.form_submit_button('Submit')
 
     if submit:

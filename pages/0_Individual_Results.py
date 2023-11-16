@@ -106,5 +106,18 @@ if password == password_list[password_list['Club Name'] == selection]['password'
     st.markdown('### Other interests')
     st.write(written[27])
 
+    others = df.iloc[:, 42:][(df[2] == selection) & (df[1] == member)]
+    others.reset_index(inplace=True, drop=True)
+    others = others.iloc[0]
+    # st.write(others)
+    st.markdown('### What do you like most about your club?')
+    st.write(others[43])
+    st.markdown('### What do you like least about your club?')
+    st.write(others[44])
+    st.markdown('### What recommendations for improvement can you provide?')
+    st.write(others[45])
+    st.markdown('### Is there anything more specific you would like to learn about?')
+    st.write(others[46])
+
 else:
     st.error('Please enter the correct password')

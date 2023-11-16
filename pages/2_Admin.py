@@ -9,8 +9,6 @@ import pandas as pd
 import secrets
 import string
 
-
-
 def reset_pass():
     conn = st.connection("gsheets", type=GSheetsConnection)
     ti_dashboard = pd.read_csv('https://dashboards.toastmasters.org/export.aspx?type=CSV&report=districtperformance~51~9/30/2023~~2023-2024')
